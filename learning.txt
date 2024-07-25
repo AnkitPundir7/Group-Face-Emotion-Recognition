@@ -1,0 +1,144 @@
+The process of face emotion recognition envolves the following steps-
+1)Data collection- Collect labelled dataset of facial images that represent different emotions.
+2)Preprocessing: standardize their size 
+		     convert them to grayscale  
+		     normalize -Standard scale or range[0-1pix]
+
+3)Model training-Train a deep learning model using labelled
+		     dataset
+4)Evaluate- To determine accuracy and performance using 		test dataset
+5)Real-Time Implementation- Implementation of model in 				   live video-streams or webcam
+
+
+Applications-
+1)Healthcare-Monitoring emotional disorders like Depression
+2)Human Computer Interaction 
+3)Advertisment- Analyze consumers emotional response to advertisements
+4)Audience Analysis-In events, conferences, or performances, to analyze the emotional responses of the audience.
+5)Security and Surveillance
+6)Education and Training:To access students emotional engagement and interests. 
+
+
+Deep Learning-
+Inspired from the structure and function of human brain.
+It is a subfield on ML and AI that focusses of training neural networks to perform complex tasks by learning from vasts amount of data. 
+Deep learning models-CNN(Convolutional Neural Network)
+			   RNN(Recurrent Neural Network)
+
+
+CNN-A deep learning Model well-suited for image based                tasks such as recognizing patterns and features.
+Uses-Image Recognition
+     
+     Face Emotion Recognition
+     
+RNN- used where order matters such as speech recognition and language translation
+
+
+Keras-Open-Source high-level deep learning API written in python. 
+User friendly and easy to use  
+Allows researchers and developers to build, experiment with, and deploy deep learning models quickly and efficiently. 
+Provides a simple interface to create complex neural network architectures with minimal code.
+
+
+In the code-
+Model Definition-
+	Keras is used to define the architecture of CNN 	model.
+	Sequential Class- is used to create linear stack of 	layers.Then various layers are added to the model 	such as Conv2D, MaxPooling2D, Dropout, and Dense to 	construct the neural network.
+Model Compilation-
+	loss function
+	optimiser
+	evalutaion metric
+Model Training-
+	fit function is called with training data x_train 	and y_train
+Model Evaluation-
+	evaluate function is called with test data x_test  	and y_test to calculate the models accuracy. 
+
+Layers-
+	The layers refer to the different building blocks  	that make up the neural network architecture. Each 	layer serves a specific purpose and plays a role in 	extracting features from the input data.
+
+Loss Function: 
+	The loss function measures how well the model's 	predictions match the actual ground-truth labels 	during training. (categorical_crossentropy).
+	USED DURING TRAINING PHASE.
+	SHOULD BE MINIMUM.
+Optimizer : 
+	It is responsible for updating the model's 	parameters during training to minimize the loss 	function. (adam) 
+Evaluation metric:
+	It is used to measure the model's performance on 
+	the test set after training. (accuracy)
+	USED DURING TESTING PHASE. 
+	PERCEBNT SHOULD BE MAXIMUM.
+
+
+
+OPEN CV-
+	Open-source computer vision and machine learning library.
+	Provides tools and functions 
+	Uses-
+		Image and video processing
+		obj detection
+		face recognition
+	Use in code-
+		Accessing the webcam
+		Converting color spaces
+		Face detection
+		Drawing rectangles
+
+
+Haar Cascade- 
+	-Machine learning obj detection algo
+	-uses a set of simple features called haar-like 	features, to create classifiers
+	-computes difference in intesities bw two regions 	in img
+	-Open cv provides implementation of haar cascade
+
+
+NUMPY-
+	Python library used for numerical computing
+	provides support for large arrays and matrices
+	provides functions to operate on these arrays
+	Use in code-
+		store pixel data of img in arrays
+		Normalization-pixel val b/w [0-1]
+		Reshaping the img data to match the i/p size
+		req by cnn model
+
+
+Pandas-
+	Used to manage and organize the image file path and 	corresponding labels
+	Use in code
+		During preprocessing phase used to create two
+		data frames 
+		1 for training
+		1 for testing
+		Each frame consists of two columns:
+		'Image'  and 'label'
+		
+		Label Encoding- In combination with scikits 		learn label encoder to convert labels to 			numerical values for training the model.
+
+Scikit learn-
+	Open-source machine learning library
+	Provides tools for classification,clustering and 	dimension reduction and more
+	USES in code
+		Label encoding
+
+
+Tensor Flow-
+	TensorFlow is an essential library in the field of 	machine learning and deep learning, and it is often 	used for training and deploying machine learning 	models, especially neural networks.
+
+Model: Convolutional Neural Network (CNN)
+Training Dataset Size: 28,821 images (across seven emotion categories)
+Testing Dataset Size: 7,066 images (across seven emotion categories)
+Image Size: 48x48 pixels (grayscale)
+Epochs: 100
+Batch Size: 128
+Training Accuracy: [Your training accuracy value]
+Testing Accuracy: [Your testing accuracy value]
+	
+	
+	
+
+
+
+
+
+
+			 
