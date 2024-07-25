@@ -1,6 +1,3 @@
-This Model can identify and categorise human emotions in both static and dynamic context.
-
-
 For the face emotion recognition project, we have implemented a Convolutional Neural Network (CNN) model using Keras and OpenCV libraries to detect and recognize facial expressions in real-time from webcam or video input. The goal of the project is to accurately classify facial expressions into seven emotion categories: angry, disgust, fear, happy, neutral, sad, and surprise.
 Model: Convolutional Neural Network (CNN)
 Training Dataset Size: 28,821 images (across seven emotion categories)
